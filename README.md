@@ -12,6 +12,7 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
   - [Run tests](#run-tests)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -73,6 +74,10 @@
 
 Clone this repository to your desired folder:
 git clone git@github.com:mulugithub/module-one-capstone.git
+
+### Install
+
+Install this project with the latest version of Git and a code editor.
 
 ### Usage
 
