@@ -134,6 +134,9 @@ class Books {
    Books.renderBooks(book.id, book.title, book.author);
  });
 
+
+ 
+// Fetched from module
 document.addEventListener('DOMContentLoaded', () => {
   clicks();
   displayNavigation();
