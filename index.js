@@ -1,4 +1,8 @@
 /* eslint-disable object-shorthand */
+import myDateTime from './modules/date-time.js';
+import displayNavigation from './modules/displayNavigation.js'
+import clicks from './modules/clicks.js';
+
 const booksListDisplay = document.getElementById('book-list');
 const bookTitle = document.getElementById('title');
 const bookAuthor = document.getElementById('author');
@@ -124,62 +128,14 @@ class Books {
   }
 }
 
-// Add event listener to click or submit button
-const addButton = document.getElementById('add-btn');
-addButton.addEventListener('click', (event) => {
-  event.preventDefault();
-  const title = bookTitle.value.trim();
-  const author = bookAuthor.value.trim();
-  if (title && author) {
-    Books.addBook(title, author);
-  }
+ // Load books from local storage and render it on the page
+ Books.loadBooks().forEach((book) => {
+   // Display book in list
+   Books.renderBooks(book.id, book.title, book.author);
+ });
+
+document.addEventListener('DOMContentLoaded', () => {
+  clicks();
+  displayNavigation();
+  myDateTime();
 });
-
-// Load books from local storage and render it on the page
-Books.loadBooks().forEach((book) => {
-  // Display book in list
-  Books.renderBooks(book.id, book.title, book.author);
-});
-
-// Get the navigation links and content sections
-const navLinks = document.querySelectorAll('header nav a');
-const contentSections = document.querySelectorAll('.content-section');
-
-// Add click event listeners to the navigation links
-navLinks.forEach((link) => {
-  link.addEventListener('click', (event) => {
-    // Prevent the default link behavior
-    event.preventDefault();
-
-    // Get the ID of the clicked link
-    const sectionId = event.target.getAttribute('href');
-
-    // Remove the "active" class from all links and content sections
-    navLinks.forEach((link) => link.classList.remove('active'));
-    contentSections.forEach((section) => section.classList.add('hidden'));
-
-    // Add the "active" class to the clicked link
-    event.target.classList.add('active');
-
-    // Show the corresponding content section
-    document.querySelector(sectionId).classList.remove('hidden');
-  });
-});
-
-const dateTime = () => {
-  const date = new Date();
-  const options = {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-    weekday: 'short',
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    hour24: true,
-  };
-  return date.toLocaleString('en-US', options);
-};
-
-const date = dateTime();
-document.getElementById('date-time').innerHTML = `${date}`;
