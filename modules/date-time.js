@@ -1,6 +1,6 @@
-// import { DateTime } from './luxon.js';
+import { DateTime } from './luxon.js';
 // import DateTime module from luxon
-import { DateTime } from '../node_modules/luxon/src/luxon.js';
+// import { DateTime } from '../node_modules/luxon/src/luxon.js';
 
 const myDateTime = () => {
   const myDocument = document.getElementById('date-time');
