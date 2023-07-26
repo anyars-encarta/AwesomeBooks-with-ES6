@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Books with ES 6</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <span class="logo"><a href="#">Awesome Books</a></span>
+        <ul>
+          <li><a href="#books-section" class="active"> Book List</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#add-book-section"> Add new</a></li>
+          <li><a href="#">|</a></li>
+          <li><a href="#contact-section"> Contact </a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="date-time">
+    </section>
+    <main>
+      <section id="books-section" class="content-section books hidden">
+        <h2>All awesome Books</h2>
+        <ul id="book-list" class="book-list"></ul>
+      </section>
+      <section id="add-book-section" class="content-section hidden">
+        <article>
+          <h2>Add a new book</h2>
+          <form>
+            <label for="title" hidden>Title:</label>
+            <input type="text" id="title" placeholder="Title" />
+            <label for="author" hidden>Author:</label>
+            <input type="text" id="author" placeholder="Author" />
+            <button type="submit" id="add-btn" class="add-btn">Add</button>
+          </form>
+        </article>
+      </section>
+      <span id="message"></span>
+      <section id="contact-section" class="content-section contact hidden">
+          <h2>Contact information</h2>
+          <p>Do you have any questions or you just want to say, Hello!</p>
+          <span>You can reach out to us!</span>
+          <ul>
+            <li>Our mail: mail@mail.com</li>
+            <li>Our phone number: 0043586534422</li>
+            <li>Our address: Streetname 22, 84503 City, Country</li>
+          </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Muluken Zemed & Anyars Yussif some right reserved</p>
+    </footer>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

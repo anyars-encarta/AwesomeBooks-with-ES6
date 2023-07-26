@@ -1,0 +1,23 @@
+{
+  "name": "Awesome-Books-with-ES6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anyars-encarta/AwesomeBooks-with-ES6.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/anyars-encarta/AwesomeBooks-with-ES6/#readme",
+  "dependencies": {
+    "full-icu": "^1.5.0",
+    "luxon": "^3.3.0",
+    "parcel-bundler": "^1.12.5",
+    "three": "^0.154.0"
+  }
+}
