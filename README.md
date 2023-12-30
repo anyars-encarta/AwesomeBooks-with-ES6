@@ -93,14 +93,15 @@ code .
 
 > This project is authored by.
 
-👤 **Author1**
+👤 **Author 1**
 
 - GitHub: [@mulugithub](https://github.com/mulugithub)
 - LinkedIn: [@muluken-zemed](https://www.linkedin.com/in/muluken-zemed-2b6a38167/)
 
-👤 **Author2**
-- GitHub: [Anyars Yussif](https://github.com/anyars-encarta) 
-- LinkedIn: [Anyars Yussif](https://www.linkedin.com/in/anyars-yussif-1a179769/)
+👤 **Author 2**
+- GitHub: [@anyars-encarta](https://github.com/anyars-encarta) 
+- Twitter: [@anyarsencarta](https://twitter.com/anyarsencarta)
+- LinkedIn: [@anyars](https://www.linkedin.com/in/anyars-yussif/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
