@@ -33,7 +33,7 @@ This project was created to showcase my
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> This awesome book project bulit with HTML , CSS and
+> This awesome book project bulit with HTML , CSS
 
 <!-- Features -->
 
