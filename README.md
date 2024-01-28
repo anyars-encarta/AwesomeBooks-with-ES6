@@ -27,8 +27,6 @@
 
 **[Awesome Books]** This project was created to showcase my HTML, CSS, and JavaScript skills while working on the module two week one project. HTML, CSS, and JavaScript were used to build the project.
 
-
-
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
